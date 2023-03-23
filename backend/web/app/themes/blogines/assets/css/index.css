@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:wght@300&family=Rambla&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #bcbcbc;
+  background: rgb(15,14,23);
+background: linear-gradient(0deg, rgba(15,14,23,1) 0%, rgba(6,54,96,1) 33%, rgba(7,7,12,1) 95%);}
+h1 {
+  font-family: "Audiowide", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "Saira", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0 50px 0;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+h3{
+  font-family: "Rambla";
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+}
+li {
+  list-style-type: none;
+}
+a:link, a:visited{
+  text-decoration: none;
+  color: #bcbcbc;
+}
+@media (max-width: 800px) {
+  h2{
+    font-size: 1.5em;
+  }
+}
+
+
+/************HEADER***********/
+.menu{
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  background-color: #12111f;
+}
+nav ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-container{
+  opacity: 1.2;
+  height: 120vh;
+  width: 100%;
+  margin-top: 15vh;
+  transition: 0.7s;
+}
+.header-infos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  #menu-theme_light{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu-item{
+    font-size: small;
+  }
+}
+
+
+
+/**********PRESENTATION**********/
+.present-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 5%;
+}
+.present-container-text{
+  width: 50%;
+  margin: 5rem;
+}
+.present-container-img{
+  width: 40%;
+  height: 90%;
+  border: solid 1px #bcbcbc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .present-container{ 
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+  }
+  .present-container-img{ 
+    border: none;
+    overflow: hidden;
+    width: 40%;
+    height: 80%;
+  }
+  .present-container-img img{
+    width: 100%;
+    height: 100%;
+  }
+  .present-container-text{
+    width: 60%;
+    margin: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .present-container{ 
+    width: 100%;
+    margin: auto;
+  }
+  .present-container-img{ 
+    display: none;
+  }
+  .present-container-img img{
+    display: none;
+  }
+  .present-container-text{
+    width: 90%;
+    margin: 2rem;
+  }
+}
+
+
+.present-container-img img{
+  height: 90%;
+}
+
+.last-articles-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 5%;
+}
+#title-last-article{
+  padding: 0 0 5rem 0;
+}
+
+.post-gallery{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 90%;
+}
+
+.post{
+  width: 25%;
+  text-align: center;
+}
+.post-image{
+  width: 100%;
+}
+@media (max-width: 1100px) {
+  .last-articles-container{
+    padding: 0;
+  }
+  #all-articles-button{
+    margin: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  #title-last-article{
+    padding: 0;
+  }
+  .post-gallery{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .post-gallery a{
+    text-align: center;
+  }
+  .post{
+    width: 100%;
+  }
+  .post_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .post-image{
+    width: 70%;
+  }
+}
+
+
+#all-articles-button{
+  width: 40%;
+  height: 3rem;
+  border: solid 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  position: relative;
+}
+#all-articles-button h3{
+  padding: 1rem ;
+}
+#all-articles-button:hover{
+  box-shadow: 1px 6px 58px 14px rgba(32,138,154,0.75);
+  -webkit-box-shadow: 1px 6px 58px 14px rgba(32,138,154,0.75);
+  -moz-box-shadow: 1px 6px 58px 14px rgba(32,138,154,0.75);
+  transition: all 0.5s ease-out;
+}
+@media (max-width: 1100px) {
+  #all-articles-button{
+    width: 80%;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 3rem;
+  }
+  #all-articles-button h4{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: auto;
+  }
+}
+
+
+/***********BANNER INSTA***********/
+.banner-photos-insta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10rem 0;
+}
+.banner-photos-insta__container{
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 5vh 0;
+}
+.banner-photos-insta__item{
+  width: 19.5%;
+}
+.banner-photos-insta__item img{
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .banner-photos-insta{
+    margin: 5rem 0;
+  }
+  .banner-photos-insta__container{
+    height: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .banner-photos-insta__container{
+    height: 250px;
+  }
+  .banner-photos-insta__item{
+    width: 33%;
+  }
+  #insta_item-4, #insta_item-5{
+    display: none;
+  }
+
+}
+
+
+/***********HOME***********/
+.home-title{
+  margin-top:20vh;
+}
+.article-exerpt-item{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+.article-exerpt-img{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-exerpt-img img{
+  width: 80%;
+}
+.article-exerpt-infos{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.single-post-img{
+  display: block;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .article-exerpt-item{
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+  }
+  .article-exerpt-item a{
+    height: 100vh;
+  }
+  .article-exerpt-img{
+    width: 85%;
+  }
+  .article-exerpt-infos{
+    width: 85%;
+  }
+}
+
+
+/***********SINGLE***********/
+.single-post-img{
+  width: 100%;
+  margin: 18% 0;
+}
+.single-post-img img{
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.single-post-content{
+  margin: 10vh 15% 10vh 15%;
+}
+.single-post-meta{
+  display: flex;
+  justify-content: right;
+}
