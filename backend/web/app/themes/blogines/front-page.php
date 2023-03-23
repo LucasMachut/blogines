@@ -23,9 +23,9 @@ $the_query = new WP_Query([
 
 <body>
 <?php get_template_part('template_parts/header_menu') ?>
-  <div class="header-container" style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?= the_post_thumbnail_url(); ?>) fixed 50% 50%;">
+<div class="header-container" style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?php the_field('banner_image'); ?>) fixed 50% 50%; background-size: cover;">
     <div class="header-infos">
-      <h1>Voir Ailleurs</h1>
+      <h1><?php the_field('main_title'); ?></h1>
       <div id="line"></div>
       </div>
     </div>
@@ -33,14 +33,10 @@ $the_query = new WP_Query([
 
   <main>
     <div class="present-container">
-      <div class="present-container-text">
-        <h2>En quête d'aventures</h2>
+        <h2><?php the_field('title2_paragraphe_presentation'); ?></h2>
         <p><?php the_field('paragraphe_presentation'); ?></p>
-      </div>
-      <div class="present-container-img">
-        <img src="<?= get_template_directory_uri() . '/assets/img/photoProfile.jpeg' ?>" alt="photo de profile Lucas Machut">
-      </div>
     </div>
+      
 
     <div class="last-articles-container">
       <h2 id="title-last-article">Derniers articles</h2>
