@@ -1,21 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:wght@300&family=Rambla&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Alkatra&family=Josefin+Sans&display=swap');
 html {
   scroll-behavior: smooth;
 }
 body {
   color: #bcbcbc;
-  background: rgb(15,14,23);
-background: linear-gradient(0deg, rgba(15,14,23,1) 0%, rgba(6,54,96,1) 33%, rgba(7,7,12,1) 95%);}
+  background: rgb(125,194,165);
+background: linear-gradient(180deg, rgba(125,194,165,1) 0%, rgba(27,109,181,1) 90%);
+font-family: 'Josefin+Sans';
+}
 h1 {
-  font-family: "Audiowide", sans-serif;
+  font-family: "Acme", sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 h2 {
-  font-family: "Saira", sans-serif;
-  text-transform: uppercase;
+  font-family: "Alkatra", sans-serif;
   text-align: center;
   padding: 20px 0 50px 0;
   font-size: 3em;
@@ -336,6 +336,10 @@ nav ul{
 .single-post-img{
   display: block;
   width: 100%;
+}
+.single-post-place{
+  display: block;
+  width: 50%;
 }
 @media (max-width: 800px) {
   .article-exerpt-item{

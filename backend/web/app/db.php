@@ -1,0 +1,1 @@
+/var/www/html/perso/blogines/backend/web/app/plugins/query-monitor/wp-content/db.php
